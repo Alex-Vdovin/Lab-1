@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="900" maxWidth="1750.0" onKeyReleased="#keyPressed" prefHeight="900.0" prefWidth="1750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab1.lab1.Controller">
+    <children>
+        <Pane fx:id="modelPane" disable="true" onKeyReleased="#keyPressed" prefHeight="900" prefWidth="1750.0" />
+        <Pane focusTraversable="true" onKeyReleased="#keyPressed" prefHeight="900" prefWidth="1750.0">
+            <children>
+                <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="84.0" prefHeight="89.0" prefWidth="190.0" textAlignment="CENTER" textFill="#ff48b3">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="statistic" alignment="TOP_CENTER" layoutX="346.0" layoutY="139.0" prefHeight="104.0" prefWidth="208.0" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.9200000166893005" green="0.18400000035762787" blue="0.18400000035762787" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.9969278033794162">
+                                    <color>
+                                        <Color red="0.8315789699554443" green="0.18171539902687073" blue="0.8315789699554443" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.8315789699554443" green="0.18171539902687073" blue="0.8315789699554443" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
+
